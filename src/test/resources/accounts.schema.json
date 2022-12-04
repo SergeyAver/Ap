@@ -1,4 +1,5 @@
  {
+  
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "array",
   "default": [],
@@ -25,10 +26,11 @@
         "pattern": "^•• \\d{4}$"
       },
       "balance": {
-        "type": "integer"
+        "type": "integer",
+        "default": 0
       },
       "currency": {
-        "type": "string", "enum": ["USD","RUB"]
+        "enum": ["USD", "RUB"]
       }
     }
   }
